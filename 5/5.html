@@ -1,0 +1,34 @@
+<head>
+    <title>Task 5</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <a name="list">the list</a>
+    <ul>
+        <li><a href="http://google.com">http://google.com1</a></li>
+        <li><a href="/tutorial">/tutorial.html1</a></li>
+        <li><a href="local/path">local/path</a></li>
+        <li><a href="ftp://ftp.com/my.zip">ftp://ftp.com/my.zip</a></li>
+        <li><a href="http://nodejs.org">http://nodejs.org</a></li>
+        <li><a href="http://internal.com/test">http://internal.com/test</a></li>
+    </ul>
+    <script>
+
+        let aElems = document.getElementsByTagName('a');
+        
+        for(let a of aElems){
+            let href = a.attributes.getNamedItem('href');
+            if(href == null) continue;
+
+            let regexOuter = new RegExp('.*:\/\/.*');
+            if(href.value.toLowerCase().match(regexOuter) != null){
+                let regexInternal = new RegExp('http:\/\/internal\.com.*');
+                if(href.value.toLowerCase().match(regexInternal) != null) continue;
+                a.style.color = 'orange';
+                continue;
+            };
+
+        }
+
+    </script>
+</body>

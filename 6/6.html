@@ -1,0 +1,26 @@
+<head>
+    <title>Task 6</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <ol id="list">
+        <li>Привет</li>
+        <li>Мир</li>
+    </ol>
+    <script>
+        let list = document.getElementById('list');
+
+        /*
+        function clear(elem) { 
+            elem.innerHTML = '';
+        }
+        */
+
+        function clear(elem) { 
+            elem.replaceChildren([]);
+        }
+
+        clear(list);
+
+    </script>
+</body>
