@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Task 9</title>
+</head>
+<body>
+    <div id="text">Текст 123</div>
+    <button id="button">Скрыть кнопку</button>
+    <script>
+
+        let button = document.getElementById('button');
+        button.addEventListener('click',(event)=>{
+
+            let element = event.currentTarget;
+            element.hidden = true;
+        });
+
+    </script>
+</body>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Task 10</title>
+</head>
+<body id="body">
+    <div id="text"></div>
+    <script>
+
+        let div = document.getElementById('text');
+        window.addEventListener('click',(event)=>{
+            
+            let x = event.clientX;
+            let y = event.clientY;
+
+            div.innerText = 'x: ' + x + ' y: ' + y;
+        });
+
+    </script>
+</body>

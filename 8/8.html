@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Task 8</title>
+</head>
+<body>
+    <div id="text">Текст 123</div>
+    <button onclick=delText();>Удалить div</button>
+    <script>
+        function delText(){
+            let body = document.getElementsByTagName('body')[0];
+            let divText = document.getElementById('text');
+            body.removeChild(divText);
+        }
+    </script>
+</body>
