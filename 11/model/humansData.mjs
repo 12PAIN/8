@@ -36,7 +36,7 @@ class humansDataUtils{
     }
 }
 
-class Human{
+export class Human{
     constructor(name, lastName, age, sex, adress, phoneNumber){
         this.name = name;
         this.lastName = lastName;
