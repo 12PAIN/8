@@ -233,6 +233,7 @@ export default {
         input_1.value = 'none';
         input_1.id = 'noneFilterInput';
         input_1.name = 'FilterInput';
+        input_1.checked = true;
 
         let label_2 = document.createElement('label');
         label_2.for = 'MFilterInput';
